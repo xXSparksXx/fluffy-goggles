@@ -1,0 +1,14 @@
+nav li {
+	display: inline-block;
+	background: #999;
+	padding: 2mm;
+	border-radius: 1.5mm;
+	color: black;
+	font-size: 5.5mm;
+	margin-top: 0.8mm;	
+}
+
+body {
+	background: #666;
+	margin: 0mm;	
+}
