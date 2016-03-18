@@ -1,6 +1,6 @@
 nav li {
 	display: inline-block;
-	background: #999;
+	background: #FFA340;
 	padding: 2mm;
 	border-radius: 1.5mm;
 	color: black;
@@ -9,6 +9,6 @@ nav li {
 }
 
 body {
-	background: #666;
+	background: #BF7A30	;
 	margin: 0mm;	
 }

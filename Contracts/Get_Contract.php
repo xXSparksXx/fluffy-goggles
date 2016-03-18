@@ -9,7 +9,7 @@ $response = @mysqli_query($dbc, $query);
 if ($response) {
 
 	echo 
-		"<table>
+		"<table style=\"width:400mm\" border=\"1\">
 			<tr>
 				<td>Name</td>
 				<td>Description</td>
@@ -17,13 +17,20 @@ if ($response) {
 				<td>Link</td>
 				<td>Date Entered</td>
 				<td>id</td>
-			</tr>
-		</table>";
+			</tr>";
 
 		while ($row	= mysqli_fetch_array($response)){
+			echo "<tr><td>" .
+			$row["Name"] . "</td><td>" .
+			$row["Description"] . "</td><td>" .
+			$row["Author"] . "</td><td>" .
+			$row["Link"] . "</td><td>" .
+			$row["Date_Entered"] . "</td><td>" .
+			$row["id"] . "</td><td>";
 
-
-		}
+				echo "</tr></table>";
+		};
 	}
 
+mysqli_close($dbc);
 ?>
